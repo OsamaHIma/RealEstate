@@ -5,19 +5,17 @@ import ImageCol from "./ImageCol";
 const ContactUs = () => {
   return (
     <section className="paddings innerWidth" id="contact-us">
-      <div className="flexCenter flex-wrap">
-        <div className="left-section flexColStart lg:flex-1 gap-2">
-          <div className="text-wrapper mx-auto md:mx-0">
-            <h1 className="orangeText">Contact Us</h1>
-            <h3 className="primaryText dark:text-light-gray">
-              Easy to Contact Us
-            </h3>
-            <p className="secondaryText">
-              We always ready to help by providing the best services for you
-              <br />
-              We believe a good place to live can make your life better
-            </p>
-          </div>
+      <div className="flexCenter paddings innerWidth">
+        <div className="left-section flexColStart flex-auto lg:flex-1 gap-2">
+          <h1 className="orangeText mx-6 md:mx-0">Contact Us</h1>
+          <h3 className="primaryText dark:text-light-gray mx-6 md:mx-0">
+            Easy to Contact Us
+          </h3>
+          <p className="secondaryText mx-6 md:mx-0">
+            We always ready to help by providing the best services for you
+            <br />
+            We believe a good place to live can make your life better
+          </p>
 
           <div className="flex justify-between">
             <ContactCard {...contactCards[0]} />
