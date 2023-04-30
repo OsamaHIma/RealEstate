@@ -19,11 +19,11 @@ const OurValue = () => {
   console.log(ClassName);
   return (
     <section>
-      <div className="paddings flexCenter flex-wrap innerWidth">
-        <div className="left-section flex-1">
+      <div className="paddings flexCenter gap-4 innerWidth">
+        <div className="left-section flex-1 ">
           <ImageCol src="/value.png" sectionName="Our Value" />
         </div>
-        <div className="right-section flexColStart flex-1 gap-2">
+        <div className="right-section flexColStart flex-auto lg:flex-1 gap-2">
           <h1 className="orangeText">Our value</h1>
           <h3 className="primaryText dark:text-light-gray">
             Value We Give To You
@@ -49,11 +49,6 @@ const OurValue = () => {
                   <AccordionItemButton
                     className={`flexCenter data-[aria-expanded="true"]:!text-red-600 dark:bg-white/10 p-4 w-full !justify-between cursor-pointer`}
                   >
-                    <AccordionItemState>
-                      {({ expanded }) =>
-                        expanded ? setClassName("accordion-shadow") : null
-                      }
-                    </AccordionItemState>
                     <div
                       className={`flexCenter p-2 bg-slate-50 dark:bg-black/25 rounded-md text-dark-blue`}
                     >

@@ -1,5 +1,6 @@
 import Companies from "@/components/Companies";
 import ContactUs from "@/components/ContactUs";
+import GetStarted from "@/components/GetStarted";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import OurValue from "@/components/OurValue";
@@ -17,6 +18,7 @@ const Home = () => {
       <Residencies />
       <OurValue/>
       <ContactUs/>
+      <GetStarted/>
     </div>
   );
 };

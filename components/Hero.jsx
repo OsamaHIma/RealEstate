@@ -1,12 +1,11 @@
 "use client";
 import { MapPinIcon } from "lucide-react";
-import Image from "next/image";
 import CountUp from "react-countup";
 import ImageCol from "./ImageCol";
 const Hero = () => {
   return (
     <section className="hero-wrapper transition-all ease-in relative pb-8 text-slate-900 dark:text-white ">
-      <div className="paddings innerWidth flex flex-wrap gap-11 justify-between items-end">
+      <div className="paddings innerWidth flexCenter gap-11 !justify-around !items-end">
         <div className="hero-left flexColStart gap-12">
           <div className="hero-title relative z-[1]">
             <div className="circle w-16 h-16 rounded-full bg-orange-gradient absolute -z-[1] right-[30%] -top-[5%]" />
@@ -53,7 +52,7 @@ const Hero = () => {
                   duration={4}
                   className="text-slate-700 font-semibold text-4xl dark:text-gray-100"
                 />
-                <span className="text-[#f79b45] text-3xl font-bold ml-2">
+                <span className="text-[#ffaa49] text-3xl font-bold ml-2">
                   +
                 </span>
               </span>
@@ -67,7 +66,7 @@ const Hero = () => {
                   duration={4}
                   className="text-slate-700 font-semibold text-4xl dark:text-gray-100"
                 />
-                <span className="text-[#f79b45] text-3xl font-bold ml-2">
+                <span className="text-[#eb9544] text-3xl font-bold ml-2">
                   +
                 </span>
               </span>
@@ -75,7 +74,7 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hero-right flexEnd">
+        <div className="hero-right flexCenter">
           <ImageCol src="/hero-image.png" sectionName="Hero" />
         </div>
       </div>
