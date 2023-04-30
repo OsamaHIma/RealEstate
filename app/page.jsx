@@ -2,7 +2,7 @@ import Companies from "@/components/Companies";
 import ContactUs from "@/components/ContactUs";
 import Footer from "@/components/Footer";
 import GetStarted from "@/components/GetStarted";
-import Header from "@/components/Header";
+import Header from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import OurValue from "@/components/OurValue";
 import Residencies from "@/components/Residencies";

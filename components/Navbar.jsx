@@ -6,7 +6,7 @@ import { Moon, Sun, Laptop, MenuIcon } from "lucide-react";
 import { useTheme } from "next-themes";
 import { useState } from "react";
 // h- stands for header-
-const Header = () => {
+const Navbar = () => {
   const { setTheme } = useTheme();
   const [showThemeMenu, setThemeMenu] = useState("-top-[400px]");
   const [showMenu, setMenu] = useState("-right-[400px]");
@@ -94,7 +94,7 @@ const Header = () => {
           </button>
 
           <ul
-            className={`flex lg:hidden menuTransition ${showMenu} absolute bg-black/10 dark:bg-white/10 backdrop-blur-md py-8 px-11 rounded-lg w-[15rem] top-[27%] z-10 flex-col m-8 shadow-lg`}
+            className={`flex lg:hidden !text-white font-medium menuTransition ${showMenu} absolute bg-black/10 dark:bg-white/10 backdrop-blur-md py-8 px-11 rounded-lg w-[15rem] top-[27%] z-10 flex-col m-8 shadow-lg`}
           >
             {navLinks.map((link, index) => (
               <li key={index} className="my-3">
@@ -111,4 +111,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Navbar;
