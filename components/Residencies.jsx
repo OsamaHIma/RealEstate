@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide, useSwiper } from "swiper/react";
 import "swiper/swiper.css";
 import { sliderData, sliderSittings } from "@/constants";
 import { LucideChevronRight, LucideChevronLeft } from "lucide-react";
+import { motion } from "framer-motion";
 
 const Residencies = () => {
   const SwiperButtons = () => {
@@ -29,12 +30,18 @@ const Residencies = () => {
     <section id="residencies">
       <div className="paddings innerWidth overflow-hidden relative">
         <div className="flex flex-wrap items-center">
-          <div className="flexColStart mb-8">
+          <motion.div
+            initial={{ y: "3rem", opacity: 0 }}
+            transition={{ duration: 1, type: "tween" }}
+            whileInView={{ y: 0, opacity: 1 }}
+            viewport={{ once: true }}
+            className="flexColStart mb-8"
+          >
             <h1 className="orangeText">Best Choices</h1>
             <h3 className="primaryText dark:text-light-gray">
               Popular Residencies
             </h3>
-          </div>
+          </motion.div>
         </div>
         <Swiper {...sliderSittings}>
           <SwiperButtons />

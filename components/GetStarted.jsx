@@ -1,10 +1,8 @@
-import React from "react";
-
 const GetStarted = () => {
   return (
     <section className="paddings innerWidth" id="get-started">
-      <div className="flexColCenter gap-6 py-10 bg-indigo-600 rounded-md border-4 border-indigo-700 text-center w-full">
-        <h1 className="text-white text-4xl font-semibold">
+      <div className="flexColCenter gap-6 py-10 px-6 md:px-0 bg-indigo-600 rounded-md border-4 border-indigo-700 text-center w-full">
+        <h1 className="text-white text-xl md:text-4xl font-semibold">
           Get started with Homyz
         </h1>
         <p className="text-gray-300 ">

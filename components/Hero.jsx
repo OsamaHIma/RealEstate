@@ -2,6 +2,7 @@
 import { MapPinIcon } from "lucide-react";
 import CountUp from "react-countup";
 import ImageCol from "./ImageCol";
+import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section className="hero-wrapper transition-all ease-in relative pb-8 text-slate-900 dark:text-white ">
@@ -9,9 +10,14 @@ const Hero = () => {
         <div className="hero-left flexColStart gap-12">
           <div className="hero-title relative z-[1]">
             <div className="circle w-16 h-16 rounded-full bg-orange-gradient absolute -z-[1] right-[30%] -top-[5%]" />
-            <h1 className="font-semibold text-[3.8rem] leading-[4rem]">
+            <motion.h1
+              initial={{ y: "2rem", opacity: 0 }}
+              animate={{ y: 0, opacity: 1 }}
+              transition={{ duration: 1.5, type: "spring" }}
+              className="font-semibold text-[3.8rem] leading-[4rem]"
+            >
               Discover <br /> Most Suitable <br /> Property
-            </h1>
+            </motion.h1>
           </div>
 
           <div className="hero-desc flexColStart">
@@ -74,9 +80,14 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="hero-right flexCenter">
+        <motion.div
+          className="hero-right flexCenter"
+          initial={{ x: "3rem", opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, type: "tween" }}
+        >
           <ImageCol src="/hero-image.png" sectionName="Hero" />
-        </div>
+        </motion.div>
       </div>
     </section>
   );

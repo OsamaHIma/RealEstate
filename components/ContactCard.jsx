@@ -1,6 +1,6 @@
 const ContactCard = ({ icon, title, num, btnText }) => {
   return (
-    <div className="rounded-md p-3 m-2 shadow w-[12rem] md:w-56 min-h-32 dark:bg-black/10">
+    <div className="rounded-md  p-3 m-2 shadow w-full md:w-56 min-h-32 dark:bg-black/10">
       <div className="flexStart my-2">
         <div className="p-2 rounded bg-slate-100 text-dark-blue dark:bg-slate-900">{icon}</div>
         <div className="text px-4">
