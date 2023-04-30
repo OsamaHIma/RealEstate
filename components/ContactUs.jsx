@@ -4,7 +4,7 @@ import ImageCol from "./ImageCol";
 
 const ContactUs = () => {
   return (
-    <section className="paddings innerWidth">
+    <section className="paddings innerWidth" id="contact-us">
       <div className="flexCenter flex-wrap">
         <div className="left-section flexColStart lg:flex-1 gap-2">
           <div className="text-wrapper mx-auto md:mx-0">

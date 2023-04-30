@@ -31,7 +31,7 @@ const Residencies = () => {
         <div className="flex flex-wrap items-center">
           <div className="flexColStart mb-8">
             <h1 className="orangeText">Best Choices</h1>
-            <h3 className="text-[#1f3e72] font-semibold text-4xl dark:text-light-gray">
+            <h3 className="primaryText dark:text-light-gray">
               Popular Residencies
             </h3>
           </div>

@@ -1,5 +1,6 @@
 import Companies from "@/components/Companies";
 import ContactUs from "@/components/ContactUs";
+import Footer from "@/components/Footer";
 import GetStarted from "@/components/GetStarted";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
@@ -16,9 +17,13 @@ const Home = () => {
       </div>
       <Companies />
       <Residencies />
-      <OurValue/>
-      <ContactUs/>
-      <GetStarted/>
+      <div className="relative">
+        <div className="gradient absolute w-80 h-80 bg-indigo-600/30 -top-24 blur-[100px] right-[100px]" />
+        <OurValue />
+        <ContactUs />
+      </div>
+      <GetStarted />
+      <Footer />
     </div>
   );
 };

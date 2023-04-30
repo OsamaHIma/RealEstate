@@ -18,7 +18,7 @@ const OurValue = () => {
   const [ClassName, setClassName] = useState(null);
   console.log(ClassName);
   return (
-    <section>
+    <section id="our-value">
       <div className="paddings flexCenter gap-4 innerWidth">
         <div className="left-section flex-1 ">
           <ImageCol src="/value.png" sectionName="Our Value" />
