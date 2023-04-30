@@ -83,8 +83,9 @@ const Hero = () => {
         <motion.div
           className="hero-right flexCenter"
           initial={{ x: "3rem", opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
+          whileInView={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, type: "tween" }}
+          viewport={{ once: true }}
         >
           <ImageCol src="/hero-image.png" sectionName="Hero" />
         </motion.div>
